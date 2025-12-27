@@ -2,70 +2,41 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Quản Lý Bán Hàng - Phong Vũ</title>
-
-  <!-- ICON -->
-  <link rel="icon" href="icon-ban-hang.png">
-  <link rel="apple-touch-icon" href="icon-ban-hang.png">
-
-  <!-- MOBILE -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0d6efd">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Quản Lý Bán Hàng - Lý Hoài Phong</title>
+  
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3501/3501170.png">
+  <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/3501/3501170.png">
+  
   <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(135deg, #0d6efd, #003c99);
-      font-family: system-ui, -apple-system, BlinkMacSystemFont;
-      color: white;
+    body, html {
+      margin: 0; padding: 0;
+      height: 100%; width: 100%;
+      overflow: hidden;
+      background-color: #f0f2f5;
     }
-
-    .app {
-      text-align: center;
-    }
-
-    .app img {
-      width: 120px;
-      margin-bottom: 20px;
-    }
-
-    .app button {
-      background: white;
-      color: #0d6efd;
+    /* Lớp phủ che thanh thông báo Google */
+    #app-container {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
       border: none;
-      padding: 14px 30px;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 30px;
-      cursor: pointer;
     }
-
-    .app button:hover {
-      opacity: 0.9;
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
     }
   </style>
 </head>
-
 <body>
 
-<div class="app">
-  <img src="icon-ban-hang.png">
-  <h2>HỆ THỐNG BÁN HÀNG</h2>
-  <p>Lý Hoài Phong</p>
-
-  <button onclick="openApp()">MỞ ỨNG DỤNG</button>
-</div>
-
-<script>
-  function openApp() {
-    window.location.href =
-      "https://script.google.com/macros/s/AKfycbwwMQHtA4DUenpFBDAyKXTCSJv4OjQsZoNot_1oEeaTnseTRYPGYeq1bJIkl6PRnX9uzA/exec?embedded=true";
-  }
-</script>
+  <div id="app-container">
+    <iframe src="https://script.google.com/macros/s/AKfycbwwMQHtA4DUenpFBDAyKXTCSJv4OjQsZoNot_1oEeaTnseTRYPGYeq1bJIkl6PRnX9uzA/exec" 
+            allow="geolocation; microphone; camera;" 
+            allowfullscreen>
+    </iframe>
+  </div>
 
 </body>
 </html>
